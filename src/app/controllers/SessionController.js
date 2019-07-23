@@ -7,7 +7,6 @@ import authConfig from '../../config/auth';
 class SessionContoler {
   async store(req, res) {
     const schema = Yup.object().shape({
-      name: Yup.string().required(),
       email: Yup.string()
         .email()
         .required(),
