@@ -2,10 +2,10 @@ import express from 'express';
 import 'express-async-errors';
 import path from 'path';
 import * as Sentry from '@sentry/node';
+import Youch from 'youch';
 import routes from './routes';
 import './database';
 import sentryConfig from './config/sentry';
-import Youch from 'youch';
 
 class App {
   constructor() {
